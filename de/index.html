@@ -1,39 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <title>House of Beats — Private Coaching in Beatmaking, Production &amp; Songwriting</title>
-    <meta name="description" content="A private music school for beatmaking, production, composition and songwriting — taught by a Hollywood-trained film-scoring producer. In the studio in Weinfelden, Switzerland, or online worldwide. Opening soon."/>
-    <link rel="canonical" href="https://house-of-beats.academy/"/>
+    <title>House of Beats — Privates Coaching in Beatmaking, Produktion &amp; Songwriting</title>
+    <meta name="description" content="Eine private Musikschule für Beatmaking, Produktion, Komposition und Songwriting — unterrichtet von einem in Hollywood ausgebildeten Filmmusik-Produzenten. Im Studio in Weinfelden (Schweiz) oder online weltweit. Eröffnet bald."/>
+    <link rel="canonical" href="https://house-of-beats.academy/de/"/>
     <link rel="alternate" hreflang="en" href="https://house-of-beats.academy/"/>
     <link rel="alternate" hreflang="de" href="https://house-of-beats.academy/de/"/>
     <link rel="alternate" hreflang="x-default" href="https://house-of-beats.academy/"/>
     <link rel="icon" type="image/png" href="/favicon.png"/>
 
-    <!-- First visit with a German browser lands on /de/; a manual pill
-         click (stored preference) always wins over the auto-detect. -->
+    <!-- A stored English preference (pill click) wins over the URL —
+         mirror of the auto-detect on the English page. -->
     <script>
         (function () {
             var pref = null;
             try { pref = localStorage.getItem("hob-lang"); } catch (e) {}
-            if (pref === "de" || (!pref && (navigator.language || "").toLowerCase().indexOf("de") === 0)) {
-                location.replace("/de/");
+            if (pref === "en") {
+                location.replace("/");
             }
         })();
     </script>
 
     <meta property="og:type" content="website"/>
     <meta property="og:site_name" content="House of Beats"/>
-    <meta property="og:title" content="House of Beats — Private Coaching in Beatmaking, Production &amp; Songwriting"/>
-    <meta property="og:description" content="From your first loop to a finished track you can actually release. Taught by a producer who learned the craft at its deepest end: film scoring in Hollywood. Opening soon."/>
-    <meta property="og:url" content="https://house-of-beats.academy/"/>
+    <meta property="og:title" content="House of Beats — Privates Coaching in Beatmaking, Produktion &amp; Songwriting"/>
+    <meta property="og:description" content="Vom ersten Loop bis zum fertigen Track, den Sie wirklich veröffentlichen können. Unterrichtet von einem Produzenten, der sein Handwerk in Hollywood gelernt hat. Eröffnet bald."/>
+    <meta property="og:url" content="https://house-of-beats.academy/de/"/>
     <meta property="og:image" content="https://house-of-beats.academy/og.png"/>
     <meta property="og:image:width" content="1200"/>
     <meta property="og:image:height" content="630"/>
-    <meta property="og:locale" content="en_US"/>
-    <meta property="og:locale:alternate" content="de_DE"/>
+    <meta property="og:locale" content="de_DE"/>
+    <meta property="og:locale:alternate" content="en_US"/>
     <meta name="twitter:card" content="summary_large_image"/>
 
     <script type="application/ld+json">
@@ -43,7 +43,7 @@
         "name": "House of Beats",
         "url": "https://house-of-beats.academy/",
         "logo": "https://house-of-beats.academy/og.png",
-        "description": "A private music school for beatmaking, production, composition and songwriting — in the studio in Weinfelden, Switzerland, or online worldwide.",
+        "description": "Eine private Musikschule für Beatmaking, Produktion, Komposition und Songwriting — im Studio in Weinfelden (Schweiz) oder online weltweit.",
         "address": {
             "@type": "PostalAddress",
             "addressLocality": "Weinfelden",
@@ -52,7 +52,7 @@
         "founder": {
             "@type": "Person",
             "name": "Andreas Kyburz",
-            "jobTitle": "Founder & Teacher",
+            "jobTitle": "Gründer & Lehrer",
             "sameAs": ["https://www.imdb.com/name/nm10020436/"]
         }
     }
@@ -198,24 +198,24 @@
     </style>
 </head>
 <body>
-    <nav class="lang" aria-label="Language">
-        <a href="/de/" data-lang="de" title="Deutsch">DE</a>
+    <nav class="lang" aria-label="Sprache">
+        <a href="/de/" data-lang="de" class="is-active" title="Deutsch" aria-current="page">DE</a>
         <span class="sep" aria-hidden="true">/</span>
-        <a href="/" data-lang="en" class="is-active" title="English" aria-current="page">EN</a>
+        <a href="/" data-lang="en" title="English">EN</a>
     </nav>
     <main>
         <div class="card">
             <img class="lockup" src="/lockup.png" alt="House of Beats" width="1200" height="361"/>
-            <span class="eyebrow">A private music school — opening soon</span>
-            <h1>Turn ideas into <em>finished</em> tracks.</h1>
+            <span class="eyebrow">Eine private Musikschule — eröffnet bald</span>
+            <h1>Aus Ideen werden <em>fertige</em> Tracks.</h1>
             <p class="sub">
-                Private coaching in beatmaking and production, composition and
-                songwriting — from your first loop to a finished track you can
-                actually release. Taught by a producer who learned the craft at
-                its deepest end: film scoring in Hollywood, on Disney and
-                Netflix teams.
+                Privates Coaching in Beatmaking und Produktion, Komposition und
+                Songwriting — vom ersten Loop bis zum fertigen Track, den Sie
+                wirklich veröffentlichen können. Unterrichtet von einem
+                Produzenten, der sein Handwerk am tiefen Ende gelernt hat:
+                Filmmusik in Hollywood, in Teams für Disney und Netflix.
             </p>
-            <span class="where">Weinfelden, Switzerland<span class="dot">·</span>Online worldwide</span>
+            <span class="where">Weinfelden, Schweiz<span class="dot">·</span>Online weltweit</span>
         </div>
     </main>
     <footer>EST. LOS ANGELES → CH</footer>
