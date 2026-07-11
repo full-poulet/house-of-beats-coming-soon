@@ -12,18 +12,8 @@
     <link rel="alternate" hreflang="x-default" href="https://house-of-beats.academy/"/>
     <link rel="icon" type="image/png" href="/favicon.png"/>
 
-    <!-- A stored English preference (pill click) wins over the URL —
-         mirror of the auto-detect on the English page. -->
-    <script>
-        (function () {
-            var pref = null;
-            try { pref = localStorage.getItem("hob-lang"); } catch (e) {}
-            if (pref === "en") {
-                location.replace("/");
-            }
-        })();
-    </script>
-
+    <!-- No redirect here: / is the router (auto-detect + stored
+         preference), an explicit /de/ visit is always honoured. -->
     <meta property="og:type" content="website"/>
     <meta property="og:site_name" content="House of Beats"/>
     <meta property="og:title" content="House of Beats — Privates Coaching in Beatmaking, Produktion &amp; Songwriting"/>
